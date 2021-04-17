@@ -1,8 +1,8 @@
 /*
  ============================================================================
-Trabajo Práctico número 1:
+Trabajo PrÃ¡ctico nÃºmero 1:
 
-Hacer una calculadora. Para ello el programa iniciará y contará con un menú de opciones:
+Hacer una calculadora. Para ello el programa iniciarÃ¡ y contarÃ¡ con un menÃº de opciones:
 1. Ingresar 1er operando (A=x)
 
 2. Ingresar 2do operando (B=y)
@@ -15,23 +15,23 @@ d) Calcular la multiplicacion (A*B)
 e) Calcular el factorial (A!)
 
 4. Informar resultados
-a) “El resultado de A+B es: r”
-b) “El resultado de A-B es: r”
-c) “El resultado de A/B es: r” o “No es posible dividir por cero”
-d) “El resultado de A*B es: r”
-e) “El factorial de A es: r1 y El factorial de B es: r2”
+a) â€œEl resultado de A+B es: râ€
+b) â€œEl resultado de A-B es: râ€
+c) â€œEl resultado de A/B es: râ€ o â€œNo es posible dividir por ceroâ€
+d) â€œEl resultado de A*B es: râ€
+e) â€œEl factorial de A es: r1 y El factorial de B es: r2â€
 
 5. Salir
 
-• Todas las funciones matemáticas del menú se deberán realizar en una biblioteca aparte,
+â€¢ Todas las funciones matemÃ¡ticas del menÃº se deberÃ¡n realizar en una biblioteca aparte,
 que contenga las funciones para realizar las cinco operaciones.
 
-• En el menú deberán aparecer los valores actuales cargados en los operandos A y B
-(donde dice “x” e “y” en el ejemplo, se debe mostrar el número cargado).
+â€¢ En el menÃº deberÃ¡n aparecer los valores actuales cargados en los operandos A y B
+(donde dice â€œxâ€ e â€œyâ€ en el ejemplo, se debe mostrar el nÃºmero cargado).
 
-• Deberán contemplarse los casos de error (división por cero, etc).
+â€¢ DeberÃ¡n contemplarse los casos de error (divisiÃ³n por cero, etc).
 
-• Documentar todas las funciones.
+â€¢ Documentar todas las funciones.
  ============================================================================
  */
 
@@ -117,8 +117,8 @@ int main(void)
             case 4:
             	if(flagOperacionesRealizadas == 0)
             	{
-            		printf("El resultado de A+B es: %d\n", suma);
-            		printf("El resultado de A-B es: %d\n", resta);
+            		printf("El resultado de %d + %d es: %d\n", primerOperando, segundoOperando, suma);
+            		printf("El resultado de %d - %d es: %d\n", primerOperando, segundoOperando, resta);
             		if(primerOperando != 0 && segundoOperando != 0)
             		{
             			printf("El resultado de la division es: %.2f \n", division);
@@ -127,8 +127,8 @@ int main(void)
             		{
             			printf("No es posible dividir por cero.\n");
             		}
-            		printf("El resultado de A*B es: %d\n", multiplicacion);
-            		printf("El factorial de A es: %d y El factorial de B es: %d\n", factorialDelPrimerOperando, factorialDelSegundoOperando);
+            		printf("El resultado de %d * %d es: %d\n", primerOperando, segundoOperando, multiplicacion);
+            		printf("El factorial de %d es: %d y El factorial de %d es: %d\n", primerOperando, segundoOperando, factorialDelPrimerOperando, factorialDelSegundoOperando);
             	}
             	else
             	{
